@@ -1,0 +1,112 @@
+#cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cuerpo {
+    background-color: beige;
+}
+
+.logo {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+
+/*menu de navegacion*/
+
+.menu {
+    background-color: burlywood;
+}
+.menu-nav {
+    display: flex;
+    text-align: center;
+    font-size: large;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    gap: 4rem;
+}
+.menu-nav li {
+    list-style: none;
+}
+
+.menu-nav li a{
+    text-decoration: none;
+    color: black;
+}
+.titulo1 {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.card-body {
+    width: fit-content;
+    margin: 2rem;
+    font-size: larger;
+}
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem;
+}
+.pie{ 
+    background-color: rgb(248, 214, 202);
+    margin-top: 3rem;
+    font-size: medium;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+.pie img {
+    width: 5rem;
+}
+
+/* esta es la vista laptop*/
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 15rem;
+    }
+
+}
+
+/* esta es mi vista para mobile*/
+@media (max-width: 320px) {
+
+    .logo {
+        width: 10rem;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: start;
+    }
+
+    .card-body {
+        font-size: medium;
+        margin: none;
+    }
+
+
+ 
+    .pie img {
+        width: 3rem;
+    }
+
+
+}
+
+
+
+
+
+    
+
+
