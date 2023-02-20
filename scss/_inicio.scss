@@ -1,0 +1,22 @@
+/* inicio */
+
+.card {
+    display: flex;
+    margin: $espacioGrande;
+    text-align: center;
+
+    img {
+        width: $iconoGrande;
+        margin: $espacioChico;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 485px) {
+    .card {
+        margin: $espacioChico;
+
+        img {
+            width: $iconoMediano;
+        }
+    }
+}

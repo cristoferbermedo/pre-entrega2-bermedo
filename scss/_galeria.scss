@@ -1,0 +1,40 @@
+/* GALERIA*/
+
+.tarjetas {
+    @include tarjetas;
+
+    img {
+        width: 20rem;
+    }
+}
+
+.btn { 
+    @extend .btn;
+    background-color: $color-secundario;
+    color: $color-quinto;
+    font-weight: 500;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-cuarto;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 485px) {
+    .tarjetas {
+
+        img {
+            width: 19rem;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .tarjetas {
+
+        img {
+            width: 16rem;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+#cabecera {
+    background-color: $color-cuarto;
+    @include flex-columna;
+    gap: $espacioMedio;
+}
+
+.logo{
+    display: block;
+    width: $iconoXgrande;
+    background-color: $color-cuarto;
+    margin: $espacioXchico;
+}
+
+/*menu de navegacion*/
+.menu,
+.menu-nav {
+    
+    background-color: $color-secundario;
+    display: flex;
+    text-align: center;
+    font-size: $fuente-media;
+    margin-top: $espacioChico;
+    gap: 4rem;
+
+    li,
+    li a {
+        list-style: none;
+        text-decoration: none;
+        color: $color-quinto;
+    }
+
+    & a:hover {
+        padding: 0.5rem;
+        background-color: $color-terciario;
+        border-radius: 6%;
+    }
+
+}
+
+#cuerpo {
+    background-color: $color-primario;
+    font-family: $fuentePrincipal;
+    margin: 0%;
+    padding: 0%;
+}
+
+.titulo1 {
+    text-align: center;
+    margin-top: $espacioXgrande;
+    margin-bottom: $espacioXgrande;
+    
+}
+
+h2,
+h3,
+h4,
+p {
+    margin-top: $espacioMedio;
+    text-align: center;
+}
+
+
+footer {
+    background-color: $color-secundario;
+    margin-top: $espacioXgrande;
+@include flex-columna;
+
+.container-redes a {
+    color: $color-terciario;
+    text-decoration: none;
+    font-size: $iconoChico;
+}
+}
+
+@media (min-width: 725px) and (max-width: 892px) {
+
+    .logo {
+        width: $iconoGrande;
+    }
+
+    .menu-nav {
+        font-size: medium; 
+        gap: 3rem;
+        margin: $espacioChico;
+    }
+
+}
+
+@media (min-width: 590px) and (max-width: 724px) {
+
+    .logo {
+        width: $iconoMediano;
+    }
+
+    .menu-nav {
+        font-size: $fuente-chica; 
+        gap: 2rem;
+        margin: $espacioChico;
+    }
+
+    .titulo1 {
+        margin: 3rem;
+    }
+}
+
+@media (min-width: 485px) and (max-width: 589px){
+    .logo {
+        width: $iconoMediano;
+    }
+
+    .menu-nav {
+        font-size: small; 
+        gap: 1rem;
+        margin: $espacioXchico;
+    }
+
+    .titulo1 {
+        margin: 2rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 485px){
+    .logo {
+        width: $iconoMediano;
+    }
+    .menu-nav {
+        flex-direction: column;
+        text-align: initial;
+        font-size: $fuente-chica;
+        gap: 0.3rem;
+    }
+
+    .titulo1 {
+        margin: 2rem;
+    }
+
+
+
+
+}

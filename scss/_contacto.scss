@@ -1,0 +1,57 @@
+.parrafo-contacto {
+    text-align: center;
+    margin: $espacioMedio 0;
+    font-size: $fuente-media;
+    gap: 4rem;
+}
+
+.main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.container-mapa {
+    border-style: double;
+    padding: 2rem;
+}
+
+form {
+    @include flex-columna;
+    border-style: double;
+    padding: 2.1rem;
+    gap: 1rem;
+
+    .campos {
+        @include flex-columna;
+    }
+
+    .botones-form {
+        @extend .btn;
+        background-color: $color-terciario;
+        color: $color-quinto;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $color-primario;
+            color: $color-terciario;
+        }
+    }
+
+
+}
+
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: $tablet) {
+    .main-contacto {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap:4rem;
+    }
+}

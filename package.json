@@ -1,0 +1,19 @@
+{
+  "name": "pre-entrega2-bermedo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristoferbermedo/pre-entrega2-bermedo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristoferbermedo/pre-entrega2-bermedo/issues"
+  },
+  "homepage": "https://github.com/cristoferbermedo/pre-entrega2-bermedo#readme"
+}

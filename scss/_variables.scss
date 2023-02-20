@@ -1,0 +1,49 @@
+/* paleta de colores*/
+$color-primario: #bde0fe;
+$color-secundario: #ffc8dd;
+$color-terciario: #CDB4DB;
+$color-cuarto: #A2D2FF;
+$color-quinto: #000;
+
+/*Tamaños de fuente*/
+$iconoXgrande: 32rem;
+$iconoGrande: 22rem;
+$iconoMediano: 15rem;
+$iconoChico: 5rem;
+$iconoXchico: 3.5rem;
+$iconoXxchico: 2rem;
+$fuente-chica: 14px;
+$fuente-media: 20px;
+
+/*tamaños de pantalla*/
+$celularS:320px;
+$celularL: 428px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px;
+
+/*Separaciones (margin y padding*/
+$espacioXchico: 0.5rem;
+$espacioChico: 1rem;
+$espacioMedio: 2.5rem;
+$espacioGrande: 4rem;
+$espacioXgrande: 6rem;
+
+
+/* fuente */
+
+$fuentePrincipal:'Short Stack', cursive;
+
+
+/*MIXIN*/
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
